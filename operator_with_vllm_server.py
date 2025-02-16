@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 
-class GoogleMapsScrapper:
+class WebScrapper:
     """
     Get Google Maps reviews of the place of interest using Maps API (lol no)
     """
@@ -101,5 +101,5 @@ class GoogleMapsScrapper:
 
 
 if __name__ == '__main__':
-    crawler = GoogleMapsScrapper(scroll_step_px=1000)
+    crawler = WebScrapper(scroll_step_px=1000)
     crawler.get_reviews('Empire State Building')
